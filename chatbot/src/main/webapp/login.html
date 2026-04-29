@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #000000, #2b0000, #8b0000);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: linear-gradient(145deg, #1a1a1a, #333);
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255,0,0,0.6);
+    border: 1px solid #444;
+}
+
+h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: white;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff0000, #990000);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff3333, #cc0000);
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<form action="LoginServlet" method="post">
+    <h2>Login</h2>
+
+    <input name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+
+    <button type="submit">Login</button>
+
+    <a href="register.html">Create new account</a>
+</form>
+
+</body>
+</html>
