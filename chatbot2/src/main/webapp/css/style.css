@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chatbot container */
+.chat-container {
+    width: 50%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+/* Chat messages */
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+}
+
+/* User message */
+.user-msg {
+    text-align: right;
+    margin: 5px 0;
+    color: #333;
+}
+
+/* Bot message */
+.bot-msg {
+    text-align: left;
+    margin: 5px 0;
+    color: #007BFF;
+}
+
+/* Input box */
+#message {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Send button */
+#sendBtn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Upload section */
+.upload-section {
+    margin-bottom: 15px;
+}
+
+.upload-section input[type="file"] {
+    display: inline-block;
+    margin-right: 10px;
+}
